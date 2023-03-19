@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #171717;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: local("Roboto-Regular"),
+   url("../src/fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: bold;
+  }
+@font-face {
+  font-family: "Brandon-Grotesque";
+  src: local("Brandon-Grotesque"),
+   url("../src/fonts/brandon-grotesque-light-58a8a4b38001d.otf") format("truetype");
+  font-weight: bold;
+  }
