@@ -1,9 +1,11 @@
-import './team.css'
+import "./team.css";
 
-const Team =()=>{
-    return(<div>
-        
-    </div>);
-}
+const Team = () => {
+  return (
+    <div>
+      <h1>Meet the Team!!!</h1>
+    </div>
+  );
+};
 
 export default Team;

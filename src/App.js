@@ -1,20 +1,36 @@
-import './App.css';
-import Navbar from './components/Navbar/navbar';
-import MainPage from './pages/MainPage/mainPage';
-import Footer from './components/Footer/footer';
-import Contact from './pages/Contact/contact';
-import image from './images/boxes.svg'
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import MainPage from "./pages/MainPage/mainPage";
+import Contact from "./pages/Contact/contact";
+import Team from "./pages/Team/team";
+import Services from "./pages/Services/services";
+import "./App.css";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    children: [
+      {
+        index: true,
+        element: <MainPage></MainPage>,
+      },
+      {
+        path: "contact",
+        element: <Contact></Contact>,
+      },
+      {
+        path: "team",
+        element: <Team></Team>,
+      },
+      {
+        path: "services",
+        element: <Services></Services>,
+      },
+    ],
+  },
+]);
 
 function App() {
-  return (
-    <div className="App">
-      <Navbar />
-      {/* <img src={image} style={{position:'right'}}></img> */}
-      {/* <MainPage/> */}
-      <Contact />
-      <Footer />
-    </div>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
