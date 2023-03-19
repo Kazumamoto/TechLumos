@@ -1,0 +1,22 @@
+/* Testing */
+/* .Bar, .NavLogo, .socialLink{
+    border: 1px solid white;
+} */
+
+.Bar{
+    margin: 10px 64px 10px 64px;
+}
+
+.NavLogo{
+    width: 75px;
+    height: 75px;
+    margin-right: 10px;
+}
+
+.socialLinks{
+    margin-left: 355px;
+}
+
+.socialLink{
+    margin-left: 40px;
+}

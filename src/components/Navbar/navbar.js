@@ -1,15 +1,40 @@
-import logo from '../../images/logo.png';
-import './navbar.css'
+import classes from "./NavBar.module.css";
+import NavigationLink from "./NavigationLink/NavigationLink";
 
-const Navbar = () => {
-    return (<>
-        <nav>
-            <img id='logo' src={logo} alt='logo' />
-            <a className='navbar-links' href='/team'>Meet the Team</a>
-            <a className='navbar-links' href='/services'>Our Services</a>
-            <a className='navbar-links' href='/contact'>Contact</a>
-        </nav>
-    </>);
-}
+const NavBar = () => {
+  return (
+    <div className={classes.Bar}>
+      <nav>
+        <a class="navbar-brand" href="/">
+          <img
+            className={classes.NavLogo}
+            src="/Images/TechLumos.png"
+            alt="Logo"
+          ></img>
+        </a>
+        <NavigationLink
+          innerText="Meet the Team"
+          toLink="/team"
+        ></NavigationLink>
+        <NavigationLink
+          innerText="Our Services"
+          toLink="/services"
+        ></NavigationLink>
+        <NavigationLink innerText="Contact" toLink="/contact"></NavigationLink>
+        <span className={classes.socialLinks}>
+          <a href="/" className={classes.socialLink}>
+            <img src="/Icons/Instagram.svg" alt="Instagram"></img>
+          </a>
+          <a href="/" className={classes.socialLink}>
+            <img src="/Icons/Facebook.svg" alt="Facebook"></img>
+          </a>
+          <a href="/" className={classes.socialLink}>
+            <img src="/Icons/Twitter.svg" alt="Twitter"></img>
+          </a>
+        </span>
+      </nav>
+    </div>
+  );
+};
 
-export default Navbar;
+export default NavBar;

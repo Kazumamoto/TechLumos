@@ -1,5 +1,5 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import MainPage from "./pages/MainPage/mainPage";
+import MainPage from "./pages/MainPage/MainPage";
 import Contact from "./pages/Contact/contact";
 import Team from "./pages/Team/team";
 import Services from "./pages/Services/services";
