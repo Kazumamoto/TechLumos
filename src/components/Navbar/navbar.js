@@ -6,10 +6,8 @@ const NavBar = () => {
   const webLinksRef = useRef();
   const navButtonHandler = () => {
     if (webLinksRef.current.className.includes("navVisible")) {
-      console.log(webLinksRef.current.style);
       webLinksRef.current.className = classes.navInVisible;
     } else {
-      console.log(webLinksRef.current.style);
       webLinksRef.current.className = classes.navVisible;
     }
   };
@@ -48,9 +46,12 @@ const NavBar = () => {
           <a href="/" className={classes.socialLink}>
             <img src="/Icons/Twitter.svg" alt="Twitter"></img>
           </a>
-          <button className={classes.navButton} onClick={navButtonHandler}>
-            NavBar
-          </button>
+          <img
+            className={classes.navButton}
+            onClick={navButtonHandler}
+            src="/Icons/Menu.svg"
+            alt="Icon"
+          ></img>
         </div>
       </nav>
     </div>

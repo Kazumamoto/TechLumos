@@ -102,7 +102,10 @@ nav{
     }
 
     .navButton{
+        margin: 0px;
+        padding: 0px;
         display: unset;
+        scale: 2;
     }
 
     .webLinks{
