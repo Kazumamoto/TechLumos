@@ -12,7 +12,11 @@ const Contact = () => {
         <ContactButton text="Send a Message" />
         <ContactButton text="+92325722496" />
         <ContactButton text="techlumos@gmail.com" />
-        <img style={{ flex: 1, height: 487, width: 487 }} src={image} />
+        <img
+          style={{ flex: 1, height: 487, width: 487 }}
+          src={image}
+          alt="LOL"
+        />
       </div>
       <div style={{ display: "flex" }}>
         <div>
