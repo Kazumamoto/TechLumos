@@ -6,7 +6,17 @@ const MainPage = () => {
   return (
     <Fragment>
       <NavBar></NavBar>
-      <h1>Main Page</h1>
+      <section className={classes.mainPage}>
+        <div className={classes.welLine}>Welcome to TechLumos</div>
+        <div className={classes.tagLine}>
+          <div>Crafting Solutions for a</div>
+          <div>Better Digital World</div>
+        </div>
+        <div className={classes.visionLine}>
+          We help business grow by designing customized web experiences.
+        </div>
+        <button className={classes.talkBut}>Let's Talk</button>
+      </section>
     </Fragment>
   );
 };
