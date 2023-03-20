@@ -1,6 +1,7 @@
 import classes from "./MainPage.module.css";
 import NavBar from "../../components/NavBar/NavBar";
 import { Fragment } from "react";
+import Footer from "../../components/Footer/Footer";
 
 const MainPage = () => {
   return (
@@ -17,6 +18,7 @@ const MainPage = () => {
         </div>
         <button className={classes.talkBut}>Let's Talk</button>
       </section>
+      <Footer></Footer>
     </Fragment>
   );
 };

@@ -1,3 +1,4 @@
+import Footer from "../../components/Footer/Footer";
 import NavBar from "../../components/NavBar/NavBar";
 import "./team.css";
 
@@ -6,6 +7,7 @@ const Team = () => {
     <div>
       <NavBar></NavBar>
       <h1>Meet the Team!!!</h1>
+      <Footer></Footer>
     </div>
   );
 };

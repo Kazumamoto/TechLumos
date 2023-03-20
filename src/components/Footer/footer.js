@@ -1,11 +1,46 @@
-import './footer.css'
+import classes from "./Footer.module.css";
 
 const Footer = () => {
-    return (<div id='footer'>
-        <p id='footer-text'>(c) Copyright TechLumos 2023. All rights reserved</p>
-        <a className='footer-links' href='Privacy Policy'>Privacy Policy</a>
-        <a className='footer-links' href='Terms and Conditions'>Terms and Conditions</a>
-           </div>);
-}
+  return (
+    <div className={classes.footer}>
+      <div className={classes.copyright}>
+        Copyright TechLumos 2023. All rights reserved
+      </div>
+      <div className={classes.WebLinks}>
+        <div className="d-flex flex-column">
+          <div className="d-flex">
+            <a className={classes.webLink} href="/services">
+              Our Services
+            </a>
+            <a className={classes.webLink} href="#">
+              Privacy Policy
+            </a>
+          </div>
+          <div className="d-flex">
+            <a className={classes.webLink} href="/contact">
+              Contact Us
+            </a>
+            <a className={classes.webLink} href="#">
+              Terms & Conditions
+            </a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div className={classes.socialLinks}>
+          <a href="/" className={classes.socialLink}>
+            <img src="/Icons/Instagram.svg" alt="Instagram"></img>
+          </a>
+          <a href="/" className={classes.socialLink}>
+            <img src="/Icons/Facebook.svg" alt="Facebook"></img>
+          </a>
+          <a href="/" className={classes.socialLink}>
+            <img src="/Icons/Twitter.svg" alt="Twitter"></img>
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default Footer;

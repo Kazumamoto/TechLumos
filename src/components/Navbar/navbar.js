@@ -23,10 +23,7 @@ const NavBar = () => {
           ></img>
         </a>
         <div className={classes.navInVisible} ref={webLinksRef}>
-          <NavigationLink
-            innerText="Meet the Team"
-            toLink="/team"
-          ></NavigationLink>
+          <NavigationLink innerText="About Us" toLink="/team"></NavigationLink>
           <NavigationLink
             innerText="Our Services"
             toLink="/services"

@@ -1,3 +1,4 @@
+import Footer from "../../components/Footer/Footer";
 import NavBar from "../../components/NavBar/NavBar";
 
 const Services = () => {
@@ -5,6 +6,7 @@ const Services = () => {
     <div>
       <NavBar></NavBar>
       <h1>Our Services</h1>
+      <Footer></Footer>
     </div>
   );
 };

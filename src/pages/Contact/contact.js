@@ -2,6 +2,7 @@ import "./contact.css";
 import image from "../../../src/images/handshake.svg";
 import ContactButton from "./contactButton";
 import NavBar from "../../components/NavBar/NavBar";
+import Footer from "../../components/Footer/Footer";
 
 const Contact = () => {
   return (
@@ -53,6 +54,7 @@ const Contact = () => {
           <button>Send message</button>
         </form>
       </div>
+      <Footer></Footer>
     </div>
   );
 };
