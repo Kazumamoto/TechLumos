@@ -7,6 +7,17 @@ const MainPage = () => {
   return (
     <Fragment>
       <NavBar></NavBar>
+      <img
+        className={classes.circleSVG}
+        src="/SVG/Circle.svg"
+        alt="Circle"
+      ></img>
+      <img
+        className={classes.rectSVG}
+        src="/SVG/Rectangle.svg"
+        alt="Rect"
+      ></img>
+      <img className={classes.lineSVG} src="/SVG/Line.svg" alt="Line"></img>
       <section className={classes.mainPage}>
         <div className={classes.welLine}>Welcome to TechLumos</div>
         <div className={classes.tagLine}>

@@ -6,7 +6,8 @@
 .Bar{
     /* min-width: 855px; */
     max-width: 1330px;
-    margin: 10px auto;
+    padding: 10px auto;
+    background-color: #171716;
 }
 
 nav{
