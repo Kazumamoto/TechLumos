@@ -19,12 +19,6 @@ nav{
     height: 75px;
 }
 
-.webLinks{
-    display: flex;
-    justify-content: center;
-    min-width: 575px;
-}
-
 .socialLinks{
     width: 675px;
     display: flex;
@@ -50,19 +44,25 @@ nav{
 }
 
 .navVisible{
+    overflow: hidden;
     width: 1000px;
     display: flex;
     flex-direction: column;
     margin: 0px;
     order: 3;
+    max-height: 90px;
+    transition: max-height 0.3s ease;
 }
 
 .navInVisible {
+    overflow: hidden;
     width: 1000px;
-    display: none;
+    display: flex;
     flex-direction: column;
     margin: 0px;
     order: 3;
+    max-height: 0;
+    transition: max-height 0.3s ease;
 }
 
 @media screen and (min-width: 855px) {
@@ -74,6 +74,7 @@ nav{
         flex-direction: unset;
         margin: unset;
         order: unset;
+        max-height: unset;
     }
 }
 
@@ -88,14 +89,6 @@ nav{
         order: 1;
     }
 
-    .webLinks {
-        width: 1000px;
-        display: none;
-        flex-direction: column;
-        margin: 0px;
-        order: 3;
-    }
-
     .socialLinks{
         width: unset;
         order: 2;
@@ -106,9 +99,5 @@ nav{
         padding: 0px;
         display: unset;
         scale: 2;
-    }
-
-    .webLinks{
-        min-width: unset;
     }
 }
