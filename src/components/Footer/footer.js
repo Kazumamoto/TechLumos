@@ -29,13 +29,13 @@ const Footer = () => {
       <div>
         <div className={classes.socialLinks}>
           <a href="/" className={classes.socialLink}>
-            <img src="/Icons/Instagram.svg" alt="Instagram"></img>
+            <img src="/Icons/Instagram Black.svg" alt="Instagram"></img>
           </a>
           <a href="/" className={classes.socialLink}>
-            <img src="/Icons/Facebook.svg" alt="Facebook"></img>
+            <img src="/Icons/Facebook Black.svg" alt="Facebook"></img>
           </a>
           <a href="/" className={classes.socialLink}>
-            <img src="/Icons/Twitter.svg" alt="Twitter"></img>
+            <img src="/Icons/Twitter Black.svg" alt="Twitter"></img>
           </a>
         </div>
       </div>
