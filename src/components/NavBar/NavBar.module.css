@@ -5,7 +5,7 @@
 
 .Bar{
     /* min-width: 855px; */
-    max-width: 1310px;
+    max-width: 1330px;
     margin: 10px auto;
 }
 
@@ -17,10 +17,11 @@ nav{
 .NavLogo{
     width: 75px;
     height: 75px;
+    margin-left: 20px;
 }
 
 .socialLinks{
-    width: 675px;
+    width: 655px;
     display: flex;
     justify-content: right;
 }
