@@ -1,8 +1,8 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import MainPage from "./pages/MainPage/MainPage";
-import Contact from "./pages/Contact/contact";
-import Team from "./pages/Team/team";
-import Services from "./pages/Services/services";
+import Contact from "./pages/Contact/Contact";
+import Team from "./pages/Team/Team";
+import Services from "./pages/Services/Services";
 import "./App.css";
 
 const router = createBrowserRouter([

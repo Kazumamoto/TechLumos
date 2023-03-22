@@ -1,5 +1,4 @@
-import "./contact.css";
-import image from "../../../src/images/handshake.svg";
+import "./Contact.css";
 import ContactButton from "./contactButton";
 import NavBar from "../../components/NavBar/NavBar";
 import Footer from "../../components/Footer/Footer";
@@ -15,7 +14,7 @@ const Contact = () => {
         <ContactButton text="techlumos@gmail.com" />
         <img
           style={{ flex: 1, height: 487, width: 487 }}
-          src={image}
+          src="/SVG/Circle.svg"
           alt="LOL"
         />
       </div>

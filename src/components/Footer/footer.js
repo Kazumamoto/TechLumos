@@ -12,7 +12,7 @@ const Footer = () => {
             <a className={classes.webLink} href="/services">
               Our Services
             </a>
-            <a className={classes.webLink} href="#">
+            <a className={classes.webLink} href="/">
               Privacy Policy
             </a>
           </div>
@@ -20,7 +20,7 @@ const Footer = () => {
             <a className={classes.webLink} href="/contact">
               Contact Us
             </a>
-            <a className={classes.webLink} href="#">
+            <a className={classes.webLink} href="/">
               Terms & Conditions
             </a>
           </div>

@@ -13,7 +13,7 @@ code {
     monospace;
 }
 
-@font-face {
+/* @font-face {
   font-family: "Roboto-Regular";
   src: local("Roboto-Regular"),
    url("../src/fonts/Roboto-Regular.ttf") format("truetype");
@@ -24,4 +24,4 @@ code {
   src: local("Brandon-Grotesque"),
    url("../src/fonts/brandon-grotesque-light-58a8a4b38001d.otf") format("truetype");
   font-weight: bold;
-  }
+  } */
