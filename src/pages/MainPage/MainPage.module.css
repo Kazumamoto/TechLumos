@@ -1,0 +1,160 @@
+/* Testing */
+/* .mainPage, .tagLine, .welLine, .visionLine, .circleSVG, .rectSVG{
+    border: 1px solid white;
+} */
+
+@font-face {
+    font-family: Brandon-R;
+    src: url(/public/Fonts/Brandon/Brandon_reg.otf);
+}
+
+@font-face {
+    font-family: Brandon-B;
+    src: url(/public/Fonts/Brandon/Brandon_bld.otf);
+}
+
+@font-face {
+    font-family: Proxima;
+    src: url(/public/Fonts/Proxima/Proxima\ Nova\ Thin.otf);
+}
+
+.mainPage{
+    margin-top: 65px;
+    margin-bottom: 190px;
+}
+
+.welLine{
+    margin: auto;
+    font-family: Brandon-R;
+    font-style: normal;
+    font-weight: 330;
+    font-size: 60px;
+    line-height: 75px;
+    text-align: center;
+    background: linear-gradient(90deg, #CE3C29 0%, #EB8400 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.tagLine{
+    margin: auto;
+    margin-top: 16px;
+    font-family: Brandon-B;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 90px;
+    text-align: center;
+    color: #E3DCD0;
+}
+
+.visionLine{
+    margin: auto;
+    margin-top: 16px;
+    font-family: Proxima;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 30px;
+    text-align: center;
+    color: #E3DCD0;
+}
+
+.talkBut{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 75px;
+    padding: 24.2162px 41.5135px;
+    gap: 13.84px;
+    width: 228px;
+    height: 64px;
+    background: #C94920;
+    box-shadow: 0px 86.4865px 158.27px rgba(0, 0, 0, 0.07), 0px 36.132px 66.1215px rgba(0, 0, 0, 0.0503198), 0px 19.3179px 35.3517px rgba(0, 0, 0, 0.0417275), 0px 10.8295px 19.8179px rgba(0, 0, 0, 0.035), 0px 5.75144px 10.5251px rgba(0, 0, 0, 0.0282725), 0px 2.3933px 4.37974px rgba(0, 0, 0, 0.0196802);
+    border-radius: 25px;
+    border-color: transparent;
+    font-family: Brandon-B;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25.9459px;
+    line-height: 37px;
+    color: #E3DCD0;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.talkBut:active, .talkBut:focus{
+    outline: none;
+    border: transparent;
+}
+
+.circleSVG{
+    position: absolute;
+    top: 33px;
+    z-index: -1;
+}
+
+.rectSVG{
+    position: absolute;
+    right: 0px;
+    top: 125px;
+    z-index: -1;
+}
+
+.lineSVG{
+    max-width: 100vw;
+    position: absolute;
+    left: 0px;
+    top: 75px;
+    z-index: -2;
+}
+
+@media screen and (max-width : 855px) {
+    .circleSVG, .rectSVG{
+        display: none;
+    }
+}
+
+@media screen and (max-width : 855px) {
+    .mainPage {
+        margin-top: 30px;
+    }
+    .welLine{
+        font-size: 50px;
+    }
+    .tagLine{
+        font-size: 60px;
+    }
+    .visionLine{
+        padding: 0px 25px;
+    }
+}
+
+@media screen and (max-width : 600px) {
+    .mainPage {
+        margin-top: 30px;
+    }
+    .welLine {
+        font-size: 40px;
+    }
+    .tagLine{
+        font-size: 48px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .mainPage{
+        margin-top: 30px;
+    }
+    .welLine{
+        line-height: 45px;
+    }
+    .tagLine{
+        font-size: 36px;
+        line-height: 60px;
+    }
+}

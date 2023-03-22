@@ -1,0 +1,105 @@
+/* Testing */
+/* .Bar, .NavLogo, .socialLink{
+    border: 1px solid white;
+} */
+
+.Bar{
+    /* min-width: 855px; */
+    max-width: 1330px;
+    padding: 10px auto;
+    background-color: #171716;
+}
+
+nav{
+    align-items: center;
+    justify-content: space-between;
+}
+
+.NavLogo{
+    width: 75px;
+    height: 75px;
+    margin-left: 20px;
+}
+
+.socialLinks{
+    width: 655px;
+    display: flex;
+    justify-content: right;
+}
+
+.socialLink{
+    margin: 0px 20px;
+}
+
+.navButton{
+    display: none;
+}
+
+.navButton:focus, .navButton:active{
+    outline: none;
+    border: transparent;
+}
+
+.logoLink{
+    width: 75px;
+    height: 75px;
+}
+
+.navVisible{
+    overflow: hidden;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    order: 3;
+    max-height: 90px;
+    transition: max-height 0.3s ease;
+}
+
+.navInVisible {
+    overflow: hidden;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    order: 3;
+    max-height: 0;
+    transition: max-height 0.3s ease;
+}
+
+@media screen and (min-width: 855px) {
+    .navInVisible, .navVisible{
+        display: flex;
+        justify-content: center;
+        min-width: 575px;
+        width: unset;
+        flex-direction: unset;
+        margin: unset;
+        order: unset;
+        max-height: unset;
+    }
+}
+
+@media screen and (max-width: 855px) {
+    nav{
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .NavLogo{
+        order: 1;
+    }
+
+    .socialLinks{
+        width: unset;
+        order: 2;
+    }
+
+    .navButton{
+        margin: 0px;
+        padding: 0px;
+        display: unset;
+        scale: 2;
+    }
+}
