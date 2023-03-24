@@ -5,13 +5,11 @@ import { Form } from "react-router-dom";
 const FormComp = () => {
   return (
     <section className={classes.formPanel}>
-      <div className="col-6">
-        <div className={classes.formPanelLines}>
-          <div className={classes.formPanelLine01}>Got a Project in Mind?</div>
-          <div className={classes.formPanelLine02}>
-            Use the Form to tell us about your project. We’ll get back to you as
-            soon as we can.
-          </div>
+      <div className={classes.formPanelLines}>
+        <div className={classes.formPanelLine01}>Got a Project in Mind?</div>
+        <div className={classes.formPanelLine02}>
+          Use the Form to tell us about your project. We’ll get back to you as
+          soon as we can.
         </div>
       </div>
       <div className={classes.formForm}>
