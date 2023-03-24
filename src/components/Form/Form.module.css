@@ -1,0 +1,141 @@
+/* Testing */
+/* .formPanel,.formPanelLine01,.formPanelLine02,.formPanelLines,.sendMessage, .formForm{
+    border: 1px solid white;
+} */
+
+@font-face {
+    font-family: Brandon;
+    src: url(/public/Fonts/Brandon/Brandon_bld.otf);
+}
+
+@font-face {
+    font-family: Proxima;
+    src: url(/public/Fonts/Proxima/Proxima\ Nova\ Alt\ Thin.otf);
+}
+
+.formPanel{
+    margin: 20px 10px 170px 10px;
+    display: flex;
+    align-items: start;
+}
+
+.formPanelLines{
+    width: fit-content;
+    margin: auto;
+    margin-top: 0px;
+}
+
+.formPanelLine01{
+    font-family: Brandon;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 55px;
+    color: #E3DCD0;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.formPanelLine02{
+    margin-top: 30px;
+    width: 475px;
+    font-family: Proxima;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    color: #E3DCD0;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+textarea {
+    width: 592px;
+    height: 224px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    font-family: Proxima-R;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 30px;
+    color: rgba(29, 35, 39, 0.75);
+    padding: 10px;
+    margin-bottom: 32px;
+    gap: 10px;
+    background: #E3DCD0;
+    border-color: transparent;
+    border-radius: 15px;
+    resize: none;
+}
+
+textarea:active,
+textarea:focus {
+    outline: none;
+}
+
+textarea::placeholder {
+    font-family: Proxima-R;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 30px;
+    color: rgba(29, 35, 39, 0.75);
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+textarea::-webkit-scrollbar {
+    background-color: transparent;
+}
+
+.sendMessage{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 48px;
+    gap: 16px;
+    width: 592px;
+    height: 62px;
+    background: #C94920;
+    box-shadow: 0px 86.4865px 158.27px rgba(0, 0, 0, 0.07), 0px 36.132px 66.1215px rgba(0, 0, 0, 0.0503198), 0px 19.3179px 35.3517px rgba(0, 0, 0, 0.0417275), 0px 10.8295px 19.8179px rgba(0, 0, 0, 0.035), 0px 5.75144px 10.5251px rgba(0, 0, 0, 0.0282725), 0px 2.3933px 4.37974px rgba(0, 0, 0, 0.0196802);
+    border-radius: 25px;
+    border-color: transparent;
+    font-family: Brandon-B;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25.9459px;
+    line-height: 37px;
+    color: #E3DCD0;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.sendMessage:active,
+.sendMessage:focus {
+    outline: none;
+    border: transparent;
+}
+
+@media screen and (max-width: 1200px) {
+    .formPanel{
+        flex-direction: column;
+    }
+
+    .formPanelLines{
+        margin-bottom: 40px;
+        width: 100%;
+    }
+
+    .formForm{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}

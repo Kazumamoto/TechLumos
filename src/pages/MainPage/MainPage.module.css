@@ -106,7 +106,7 @@
 }
 
 .lineSVG{
-    max-width: 100vw;
+    width: 100%;
     position: absolute;
     left: 0px;
     top: 75px;
