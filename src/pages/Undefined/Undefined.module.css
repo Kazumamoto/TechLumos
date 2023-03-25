@@ -1,0 +1,54 @@
+@font-face {
+    font-family: Brandon;
+    src: url(/public/Fonts/Brandon/Brandon_bld.otf);
+}
+
+.mainUndefined{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto 20px;
+}
+
+.notFound{
+    margin-right: 135px;
+    font-family: Brandon;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 90px;
+    color: #E3DCD0;
+}
+
+.notImage{
+    margin-left: 135px;
+}
+
+@media screen and (max-width: 1280px) {
+    .notFound{
+        margin-right: 25px;
+    }
+    .notImage{
+        margin-left: 25px;
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    .mainUndefined{
+        flex-direction: column;
+    }
+    .notFound, .notImage{
+        margin: 0px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .notFound{
+        font-size: 40px;
+        margin: 0px;
+    }
+    .notImage{
+        margin: 0px;
+        width: 250px;
+    }
+}

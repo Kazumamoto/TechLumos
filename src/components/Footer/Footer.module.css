@@ -13,7 +13,13 @@
     src: url(/public/Fonts/Roboto/Roboto-Bold.ttf);
 }
 
+.mainFooter{
+    background-color: #E3DCD0;
+}
+
 .footer{
+    max-width: 1440px;
+    margin: 0px auto;
     padding: 0px 64px;
     background-color: #E3DCD0;
     height: 174px;
