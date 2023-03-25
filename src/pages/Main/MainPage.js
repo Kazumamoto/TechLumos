@@ -3,6 +3,7 @@ import NavBar from "../../components/NavBar/NavBar";
 import { Fragment } from "react";
 import Footer from "../../components/Footer/Footer";
 import FormComp from "../../components/Form/Form";
+import AboutUs from "../../components/About Us/AboutUs";
 
 const MainPage = () => {
   return (
@@ -30,7 +31,8 @@ const MainPage = () => {
         </div>
         <button className={classes.talkBut}>Let's Talk</button>
       </section>
-      <FormComp></FormComp>
+      <AboutUs></AboutUs>
+      {/* <FormComp></FormComp> */}
       <Footer></Footer>
     </Fragment>
   );
