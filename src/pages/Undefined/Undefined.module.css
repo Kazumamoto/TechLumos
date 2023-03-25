@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto 20px;
+    margin: 0px 20px 300px;
 }
 
 .notFound{
@@ -36,6 +36,7 @@
 @media screen and (max-width: 1060px) {
     .mainUndefined{
         flex-direction: column;
+        margin: 0px 20px 100px;
     }
     .notFound, .notImage{
         margin: 0px;
