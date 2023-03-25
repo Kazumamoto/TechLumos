@@ -14,7 +14,7 @@ const FormComp = () => {
       </div>
       <div className={classes.formForm}>
         <Form>
-          <div className="d-flex">
+          <div className={classes.inputTagsG01}>
             <Input
               name="username"
               type="text"
@@ -31,16 +31,18 @@ const FormComp = () => {
             ></Input>
           </div>
           <div className="d-flex flex-column">
-            <label for="details">Your Project Details</label>
-            <div>
-              <textarea
-                name="details"
-                id="details"
-                placeholder="Project Details"
-              ></textarea>
+            <div className={classes.proDetails}>
+              <label for="details">Your Project Details</label>
+              <div>
+                <textarea
+                  name="details"
+                  id="details"
+                  placeholder="Project Details"
+                ></textarea>
+              </div>
             </div>
           </div>
-          <div className="d-flex">
+          <div className={classes.inputTagsG02}>
             <Input
               name="budget"
               type="number"

@@ -4,10 +4,9 @@
 } */
 
 .Bar{
-    /* min-width: 855px; */
+    margin: 0px auto;
     max-width: 1330px;
     padding: 10px auto;
-    background-color: #171716;
 }
 
 nav{
@@ -97,9 +96,8 @@ nav{
     }
 
     .navButton{
-        margin: 0px;
-        padding: 0px;
         display: unset;
-        scale: 2;
+        padding: 0px 10px;
+        background-color: white;
     }
 }

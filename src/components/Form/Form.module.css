@@ -16,7 +16,6 @@
 .formPanel{
     margin: 20px 10px 170px 10px;
     display: flex;
-    align-items: center;
     justify-content: space-around;
 }
 
@@ -37,7 +36,7 @@
 }
 
 .formPanelLine02{
-    margin-top: 30px;
+    margin: 30px auto 0px;
     width: 475px;
     font-family: Proxima;
     font-style: normal;
@@ -116,6 +115,10 @@ textarea::-webkit-scrollbar {
     flex-grow: 0;
 }
 
+.inputTagsG01, .inputTagsG02{
+    display: flex;
+}
+
 .sendMessage:active,
 .sendMessage:focus {
     outline: none;
@@ -138,5 +141,41 @@ textarea::-webkit-scrollbar {
         display: flex;
         justify-content: center;
         width: 100%;
+    }
+
+    .sendMessage{
+        margin: 0px auto;
+    }
+
+    .proDetails{
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .inputTagsG01, .inputTagsG02{
+        flex-direction: column;
+    }
+
+    .proDetails{
+        margin: auto;
+        width: 280px;
+    }
+
+    textarea{
+        width: 280px;
+    }
+
+    .sendMessage{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .formPanelLine01{
+        font-size: 36px;
+    }
+    .formPanelLine02{
+        width: 400px;
     }
 }

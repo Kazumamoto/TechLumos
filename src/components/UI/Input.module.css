@@ -63,3 +63,15 @@ input::placeholder{
     order: 0;
     flex-grow: 0;
 }
+
+@media screen and (max-width:1200px) {
+    .inputTag {
+        margin: 0px 15px;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .inputTag {
+        margin: 0px auto;
+    }
+}
