@@ -13,45 +13,50 @@ const NavBar = () => {
   };
 
   return (
-    <div className={classes.Bar}>
-      <nav className="d-flex flex-fill">
-        <a href="/" className={classes.logoLink}>
-          <img
-            className={classes.NavLogo}
-            src="/Images/TechLumos.png"
-            alt="Logo"
-          ></img>
-        </a>
-        <div className={classes.navInVisible} ref={webLinksRef}>
-          <NavigationLink innerText="About Us" toLink="/team"></NavigationLink>
-          <NavigationLink
-            innerText="Our Services"
-            toLink="/services"
-          ></NavigationLink>
-          <NavigationLink
-            innerText="Contact"
-            toLink="/contact"
-          ></NavigationLink>
-        </div>
-        <div className={classes.socialLinks}>
-          <a href="/" className={classes.socialLink}>
-            <img src="/Icons/Instagram.svg" alt="Instagram"></img>
+    <section className={classes.mainBar}>
+      <div className={classes.Bar}>
+        <nav className="d-flex flex-fill">
+          <a href="/" className={classes.logoLink}>
+            <img
+              className={classes.NavLogo}
+              src="/Images/TechLumos.png"
+              alt="Logo"
+            ></img>
           </a>
-          <a href="/" className={classes.socialLink}>
-            <img src="/Icons/Facebook.svg" alt="Facebook"></img>
-          </a>
-          <a href="/" className={classes.socialLink}>
-            <img src="/Icons/Twitter.svg" alt="Twitter"></img>
-          </a>
-          <img
-            className={classes.navButton}
-            onClick={navButtonHandler}
-            src="/Icons/Menu.svg"
-            alt="Icon"
-          ></img>
-        </div>
-      </nav>
-    </div>
+          <div className={classes.navInVisible} ref={webLinksRef}>
+            <NavigationLink
+              innerText="About Us"
+              toLink="/team"
+            ></NavigationLink>
+            <NavigationLink
+              innerText="Our Services"
+              toLink="/services"
+            ></NavigationLink>
+            <NavigationLink
+              innerText="Contact"
+              toLink="/contact"
+            ></NavigationLink>
+          </div>
+          <div className={classes.socialLinks}>
+            <a href="/" className={classes.socialLink}>
+              <img src="/Icons/Instagram.svg" alt="Instagram"></img>
+            </a>
+            <a href="/" className={classes.socialLink}>
+              <img src="/Icons/Facebook.svg" alt="Facebook"></img>
+            </a>
+            <a href="/" className={classes.socialLink}>
+              <img src="/Icons/Twitter.svg" alt="Twitter"></img>
+            </a>
+            <img
+              className={classes.navButton}
+              onClick={navButtonHandler}
+              src="/Icons/Menu.svg"
+              alt="Icon"
+            ></img>
+          </div>
+        </nav>
+      </div>
+    </section>
   );
 };
 

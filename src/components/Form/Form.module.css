@@ -179,3 +179,19 @@ textarea::-webkit-scrollbar {
         width: 400px;
     }
 }
+
+@media screen and (max-width:430px) {
+    .formPanelLine02{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .formPanelLine01{
+        margin: 0px auto;
+        width: 200px;
+    }
+    .formPanelLine02{
+        width: 250px;
+    }
+}

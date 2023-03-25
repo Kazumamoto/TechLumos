@@ -157,4 +157,13 @@
         font-size: 36px;
         line-height: 60px;
     }
+    .lineSVG{
+        top: 100px;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .tagLine{
+        font-size: 30px;
+    }
 }
