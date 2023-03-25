@@ -25,6 +25,10 @@ const router = createBrowserRouter([
         path: "services",
         element: <Services></Services>,
       },
+      {
+        path: "test",
+        element: <h1>Test</h1>,
+      },
     ],
   },
 ]);
