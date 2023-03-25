@@ -50,13 +50,13 @@ nav{
 }
 
 .navVisible{
-    overflow: hidden;
+    overflow: visible;
     width: 1000px;
     display: flex;
     flex-direction: column;
     margin: 0px;
     order: 3;
-    max-height: 90px;
+    max-height: 135px;
     transition: max-height 0.3s ease;
 }
 
@@ -90,27 +90,19 @@ nav{
         align-items: center;
         flex-wrap: wrap;
     }
-
     .NavLogo{
         order: 1;
     }
-
-    .socialLinks{
-        width: unset;
-        order: 2;
-    }
-
-    .socialLink{
-        margin: 0px 10px;
-    }
-
     .navButton{
         display: unset;
         padding: 0px 10px;
-        background-color: white;
     }
-
     .NavLogo{
         margin: 0px;
+    }
+    .socialLinks{
+        width: auto;
+        justify-content: center;
+        margin: 10px 0px 0px;
     }
 }

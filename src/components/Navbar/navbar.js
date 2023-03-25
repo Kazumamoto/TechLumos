@@ -36,24 +36,24 @@ const NavBar = () => {
               innerText="Contact"
               toLink="/contact"
             ></NavigationLink>
+            <div className={classes.socialLinks}>
+              <a href="/" className={classes.socialLink}>
+                <img src="/Icons/Instagram.svg" alt="Instagram"></img>
+              </a>
+              <a href="/" className={classes.socialLink}>
+                <img src="/Icons/Facebook.svg" alt="Facebook"></img>
+              </a>
+              <a href="/" className={classes.socialLink}>
+                <img src="/Icons/Twitter.svg" alt="Twitter"></img>
+              </a>
+            </div>
           </div>
-          <div className={classes.socialLinks}>
-            <a href="/" className={classes.socialLink}>
-              <img src="/Icons/Instagram.svg" alt="Instagram"></img>
-            </a>
-            <a href="/" className={classes.socialLink}>
-              <img src="/Icons/Facebook.svg" alt="Facebook"></img>
-            </a>
-            <a href="/" className={classes.socialLink}>
-              <img src="/Icons/Twitter.svg" alt="Twitter"></img>
-            </a>
-            <img
-              className={classes.navButton}
-              onClick={navButtonHandler}
-              src="/Icons/Menu.svg"
-              alt="Icon"
-            ></img>
-          </div>
+          <img
+            className={classes.navButton}
+            onClick={navButtonHandler}
+            src="/SVG/Menu.svg"
+            alt="Icon"
+          ></img>
         </nav>
       </div>
     </section>
