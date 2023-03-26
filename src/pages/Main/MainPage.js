@@ -4,6 +4,7 @@ import { Fragment } from "react";
 import Footer from "../../components/Footer/Footer";
 import FormComp from "../../components/Form/Form";
 import AboutUs from "../../components/About Us/AboutUs";
+import OurServices from "../../components/Our Services/OurServices";
 
 const MainPage = () => {
   return (
@@ -32,7 +33,8 @@ const MainPage = () => {
         <button className={classes.talkBut}>Let's Talk</button>
       </section>
       <AboutUs></AboutUs>
-      {/* <FormComp></FormComp> */}
+      <OurServices></OurServices>
+      <FormComp></FormComp>
       <Footer></Footer>
     </Fragment>
   );

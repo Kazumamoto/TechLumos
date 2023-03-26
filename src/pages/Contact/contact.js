@@ -2,6 +2,7 @@ import "./Contact.css";
 import ContactButton from "./contactButton";
 import NavBar from "../../components/NavBar/NavBar";
 import Footer from "../../components/Footer/Footer";
+import FormComp from "../../components/Form/Form";
 
 const Contact = () => {
   return (
@@ -12,13 +13,13 @@ const Contact = () => {
         <ContactButton text="Send a Message" />
         <ContactButton text="+92325722496" />
         <ContactButton text="techlumos@gmail.com" />
-        <img
+        {/* <img
           style={{ flex: 1, height: 487, width: 487 }}
           src="/SVG/Circle.svg"
           alt="LOL"
-        />
+        /> */}
       </div>
-      <div style={{ display: "flex" }}>
+      {/* <div style={{ display: "flex" }}>
         <div>
           <h2>Got a project in mind</h2>
           <p>
@@ -52,7 +53,8 @@ const Contact = () => {
           <br />
           <button>Send message</button>
         </form>
-      </div>
+      </div> */}
+      <FormComp></FormComp>
       <Footer></Footer>
     </div>
   );
