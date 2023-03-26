@@ -1,0 +1,99 @@
+@font-face {
+    font-family: Proxima;
+    src: url(/public/Fonts/Proxima/Proxima\ Nova\ Alt\ Bold.otf);
+}
+
+@font-face {
+    font-family: Proxima-R;
+    src: url(/public/Fonts/Proxima/Proxima\ Nova\ Alt\ Light.otf);
+}
+
+.contactUs{
+    margin-top: 50px;
+    font-family: Proxima;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 75px;
+    color: #E3DCD0;
+    text-align: center;
+}
+
+.contactPanel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 60px 0px 280px;
+}
+
+.handImage{
+    margin: 0px 50px;
+}
+
+.contactButGroup{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 50px;
+}
+
+.contactBut{
+    padding: 0px;
+    margin: 16px;
+    background: #2D2D2A;
+    box-shadow: 0px 2px 109px rgba(0, 0, 0, 0.05), 0px 0.835552px 45.5376px rgba(0, 0, 0, 0.0468862), 0px 0.446726px 24.3466px rgba(0, 0, 0, 0.037942), 0px 0.250431px 13.6485px rgba(0, 0, 0, 0.0285609), 0px 0.133002px 7.24861px rgba(0, 0, 0, 0.0190611), 0px 0.0553451px 3.01631px rgba(0, 0, 0, 0.00952994);
+    border-radius: 10px;
+    border-color: transparent;
+    width: 484px;
+    height: 114px;
+    font-family: Proxima-R;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 75px;
+    color: #E3DCD0;
+}
+
+.contactBut:active, .contactBut:focus{
+    outline: none;
+}
+
+.contactImg{
+    margin-right: 32px;
+}
+
+@media screen and (max-width:1200px) {
+    .handImage{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .contactPanel{
+        flex-direction: column-reverse;
+        margin: 40px auto;
+    }
+    .contactButGroup, .handImage{
+        margin: 32px auto;
+    }
+}
+
+@media screen and (max-width:540px) {
+    .contactPanel{
+        margin-top: 0px;
+    }
+    .contactBut{
+        width: 275px;
+        height: 100px;
+        font-size: 20px;
+        margin: 16px 0px;
+    }
+    .contactImg{
+        margin-right: 8px;
+    }
+    .handImage{
+        display: none;
+    }
+    .contactUs{
+        font-size: 45px;
+    }
+}

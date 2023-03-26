@@ -1,9 +1,4 @@
 @font-face {
-    font-family: Proxima-T;
-    src: url(/public/Fonts/Proxima/Proxima\ Nova\ Alt\ Thin.otf);
-}
-
-@font-face {
     font-family: Proxima-R;
     src: url(/public/Fonts/Proxima/ProximaNova-Regular.otf);
 }
@@ -14,7 +9,7 @@
 
 label{
     margin-bottom: 8px;
-    font-family: Proxima-T;
+    font-family: Proxima-R;
     font-style: normal;
     font-weight: 700;
     font-size: 21px;

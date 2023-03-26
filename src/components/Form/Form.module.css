@@ -9,8 +9,8 @@
 }
 
 @font-face {
-    font-family: Proxima;
-    src: url(/public/Fonts/Proxima/Proxima\ Nova\ Thin.otf);
+    font-family: Proxima-L;
+    src: url(/public/Fonts/Proxima/Proxima\ Nova\ Alt\ Light.otf);
 }
 
 .formPanel{
@@ -38,7 +38,7 @@
 .formPanelLine02{
     margin: 30px auto 0px;
     width: 475px;
-    font-family: Proxima;
+    font-family: Proxima-L;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -167,7 +167,8 @@ textarea::-webkit-scrollbar {
     }
 
     .sendMessage{
-        width: 300px;
+        width: 275px;
+        padding: 0px;
     }
 }
 

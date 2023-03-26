@@ -1,5 +1,4 @@
-import "./Contact.css";
-import ContactButton from "./contactButton";
+import classes from "./Contact.module.css";
 import NavBar from "../../components/NavBar/NavBar";
 import Footer from "../../components/Footer/Footer";
 import FormComp from "../../components/Form/Form";
@@ -8,52 +7,42 @@ const Contact = () => {
   return (
     <div>
       <NavBar></NavBar>
-      <h1>Contact Us</h1>
-      <div style={{ display: "flex" }}>
-        <ContactButton text="Send a Message" />
-        <ContactButton text="+92325722496" />
-        <ContactButton text="techlumos@gmail.com" />
-        {/* <img
-          style={{ flex: 1, height: 487, width: 487 }}
-          src="/SVG/Circle.svg"
-          alt="LOL"
-        /> */}
-      </div>
-      {/* <div style={{ display: "flex" }}>
-        <div>
-          <h2>Got a project in mind</h2>
-          <p>
-            Use the form to tell us about your project we will get back to you
-            as soon as we can.
-          </p>
+      <section className={classes.mainContact}>
+        <div className={classes.contactUs}>Contact Us</div>
+        <div className={classes.contactPanel}>
+          <div className={classes.contactButGroup}>
+            <button className={classes.contactBut}>
+              <img
+                className={classes.contactImg}
+                alt="Icon"
+                src="/SVG/Contact Page/Message.svg"
+              ></img>{" "}
+              Send a Message
+            </button>
+            <button className={classes.contactBut}>
+              <img
+                className={classes.contactImg}
+                alt="Icon"
+                src="/SVG/Contact Page/Whatsapp.svg"
+              ></img>
+              +923364436220
+            </button>
+            <button className={classes.contactBut}>
+              <img
+                className={classes.contactImg}
+                alt="Icon"
+                src="/SVG/Contact Page/Email.svg"
+              ></img>
+              techlumos@gmail.com
+            </button>
+          </div>
+          <img
+            className={classes.handImage}
+            src="/Images/Hand.png"
+            alt="Contact"
+          ></img>
         </div>
-        <form>
-          <label style={{ color: "white" }}>
-            Your name
-            <input type="text" placeholder="Name" />
-          </label>
-          <label style={{ color: "white" }}>
-            Your Email
-            <input type="text" placeholder="Email" />
-          </label>
-          <br />
-          <label style={{ color: "white" }}>
-            Your Project Details
-            <input
-              type="text"
-              style={{ height: 300, width: 400 }}
-              placeholder="Project details"
-            />
-          </label>
-          <br />
-          <label style={{ color: "white" }}>
-            Your timeline
-            <input type="text" placeholder="Timeline" />
-          </label>
-          <br />
-          <button>Send message</button>
-        </form>
-      </div> */}
+      </section>
       <FormComp></FormComp>
       <Footer></Footer>
     </div>
