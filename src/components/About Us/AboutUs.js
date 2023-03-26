@@ -3,7 +3,7 @@ import classes from "./AboutUs.module.css";
 const AboutUs = () => {
   return (
     <section className={classes.aboutUs}>
-      <h1 className={classes.aboutUsHeading}>About us</h1>
+      <h1 className={classes.aboutUsHeading}>About Us</h1>
       <p className={classes.aboutUsContent}>
         TechLumos is an IT services agency established in 2022 specializing in
         UI/UX design and web development. Our team is made up of experienced
