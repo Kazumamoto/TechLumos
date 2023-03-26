@@ -24,13 +24,14 @@
 }
 
 .welLine{
-    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 0px 5px;
     font-family: Brandon-R;
     font-style: normal;
     font-weight: 330;
     font-size: 60px;
     line-height: 75px;
-    text-align: center;
     background: linear-gradient(90deg, #CE3C29 0%, #EB8400 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -151,7 +152,10 @@
         margin-top: 30px;
     }
     .welLine{
+        flex-direction: column;
         line-height: 45px;
+        padding: 0px;
+        margin: 0px auto;
     }
     .tagLine{
         font-size: 36px;

@@ -22,7 +22,10 @@ const MainPage = () => {
       ></img>
       <img className={classes.lineSVG} src="/SVG/Line.svg" alt="Line"></img>
       <section className={classes.mainPage}>
-        <div className={classes.welLine}>Welcome to TechLumos</div>
+        <div className={classes.welLine}>
+          <div className={classes.welLine}>Welcome to</div>
+          <h1 className={classes.welLine}>TechLumos</h1>
+        </div>
         <div className={classes.tagLine}>
           <div>Crafting Solutions for a</div>
           <div>Better Digital World</div>
